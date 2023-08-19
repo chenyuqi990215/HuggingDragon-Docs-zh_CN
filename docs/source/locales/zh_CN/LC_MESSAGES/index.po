@@ -114,7 +114,7 @@ msgstr "HuggingDragon是一个先进且统一的框架，旨在革新智能交�
 msgid ""
 "Please make sure that all the datasets and checkpoints are used for "
 "**research purpose only**."
-msgstr "请确保所有数据集和模型文件仅用于**研究目的**。"
+msgstr "请确保所有数据集和模型文件仅用于研究目的。"
 
 #: ../index.rst:19
 msgid "Fast Installation"
