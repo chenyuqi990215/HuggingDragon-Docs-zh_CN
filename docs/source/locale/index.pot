@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2023, Yuqi Chen, Tian Sun
-# This file is distributed under the same license as the HuggingDragon package.
+# This file is distributed under the same license as the HuggingDragon's Document package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: HuggingDragon \n"
+"Project-Id-Version: HuggingDragon's Document \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-10 15:44+0800\n"
+"POT-Creation-Date: 2023-08-19 14:14+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,26 +16,127 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../index.rst:9
-msgid "Contents:"
+#: ../index.rst:45
+msgid "Download Datasets"
 msgstr ""
 
-#: ../index.rst:7
-msgid "Welcome to HuggingDragon's documentation!"
+#: ../index.rst:45
+msgid "Installation"
 msgstr ""
 
-#: ../index.rst:16
-msgid "Indices and tables"
-msgstr "文档目录结构"
+#: ../index.rst:45
+msgid "Quick Start"
+msgstr ""
 
-#: ../index.rst:18
-msgid ":ref:`genindex`"
+#: ../index.rst:45
+msgid "Project Structure"
+msgstr ""
+
+#: ../index.rst:45
+msgid "Getting Started"
+msgstr ""
+
+#: ../index.rst:55
+msgid "Create a Road Network"
+msgstr ""
+
+#: ../index.rst:55
+msgid "Create a Trajectory Dataset"
+msgstr ""
+
+#: ../index.rst:55
+msgid "Trajectory Preprocess"
+msgstr ""
+
+#: ../index.rst:55
+msgid "Config Settings"
+msgstr ""
+
+#: ../index.rst:55
+msgid "Basic Tutorials"
+msgstr ""
+
+#: ../index.rst:65
+msgid "Tips for Coding"
+msgstr ""
+
+#: ../index.rst:65
+msgid "Write Config File"
+msgstr ""
+
+#: ../index.rst:65
+msgid "Customize Network"
+msgstr ""
+
+#: ../index.rst:65
+msgid "Customize Task"
+msgstr ""
+
+#: ../index.rst:65
+msgid "Advanced Usage"
+msgstr ""
+
+#: ../index.rst:75
+msgid "Overview"
+msgstr ""
+
+#: ../index.rst:75
+#: ../index.rst:83
+msgid "Trajectory Recovery"
+msgstr ""
+
+#: ../index.rst:75
+msgid "Supported Tasks"
+msgstr ""
+
+#: ../index.rst:83
+msgid "Visualization"
+msgstr ""
+
+#: ../index.rst:8
+msgid "HuggingDragon's Document"
+msgstr ""
+
+#: ../index.rst:11
+msgid "HuggingDragon is an advanced and unified framework designed to revolutionize trajectory-based applications within the realm of intelligent transportation systems (ITS). Our objective is to offer researchers a robust experimental tool and a convenient development framework, facilitating the exploration and implementation of trajectory-based applications."
+msgstr ""
+
+#: ../index.rst:15
+msgid "Please make sure that all the datasets and checkpoints are used for **research purpose only**."
 msgstr ""
 
 #: ../index.rst:19
-msgid ":ref:`modindex`"
+msgid "Fast Installation"
 msgstr ""
 
-#: ../index.rst:20
-msgid ":ref:`search`"
+#: ../index.rst:21
+msgid "Currently, HuggingDragon can only be installed from source code."
+msgstr ""
+
+#: ../index.rst:23
+msgid "To proceed with the installation, please create an environment with Python version ``3.8`` and execute the following commands:"
+msgstr ""
+
+#: ../index.rst:32
+msgid "Features"
+msgstr ""
+
+#: ../index.rst:34
+msgid "**Unified Framework**: HuggingDragon provides a unified framework that integrates multiple trajectory-based tasks and applications within intelligent transportation systems, offering a centralized solution for various trajectory analysis needs."
+msgstr ""
+
+#: ../index.rst:36
+msgid "**Extensibility**: HuggingDragon is designed to be extensible, allowing researchers and developers to easily incorporate new tasks, algorithms, and models into the framework, fostering flexibility and adaptability to evolving research needs."
+msgstr ""
+
+#: ../index.rst:38
+msgid "**Comprehensive Task Support**: HuggingDragon currently supports essential tasks such as trajectory recovery and trajectory similarity, facilitating effective comparison and analysis for trajectory-based applications."
+msgstr ""
+
+#: ../index.rst:40
+msgid "**Systematic Pipeline**: HuggingDragon provides a systematic pipeline that encompasses all necessary steps and components related to trajectory-based tasks, ensuring a structured and efficient workflow for researchers and developers."
+msgstr ""
+
+#: ../index.rst:42
+msgid "**Reproducibility and Standardization**: HuggingDragon emphasizes reproducibility and standardization in the field of trajectory-based applications. By providing a comprehensive and consistent framework, it enables researchers to compare results, validate findings, and contribute to the advancement of the field."
 msgstr ""

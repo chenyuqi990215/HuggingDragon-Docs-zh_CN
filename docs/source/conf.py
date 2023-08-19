@@ -13,11 +13,11 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-
+from datetime import datetime
 
 # -- Project information -----------------------------------------------------
-
-project = 'HuggingDragon'
+now = datetime.now()
+project = "HuggingDragon's Document"
 copyright = '2023, Yuqi Chen, Tian Sun'
 author = 'Yuqi Chen, Tian Sun'
 
@@ -30,8 +30,18 @@ release = 'release 1.0'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-]
+extensions = ['recommonmark',
+              'nbsphinx',
+              'sphinx.ext.autodoc',
+              'sphinx.ext.napoleon',
+              'sphinx.ext.viewcode',
+              'sphinx_tabs.tabs',
+              # 'sphinx.ext.autodoc',
+              # 'sphinx.ext.mathjax',
+              # 'sphinx.ext.ifconfig',
+              # 'sphinx.ext.viewcode',
+              # 'sphinx.ext.githubpages',
+              ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -54,6 +64,12 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-language = 'zh_CN'  # 设置新项目的语言与中文
-locale_dirs = ['locale/']  # 设置本地化数据目录
+html_logo = "_static/logo.svg"
+html_css_files = [
+    'css/custom.css',
+]
 
+source_suffix = ['.rst', '.md']
+
+sphinx_tabs_valid_builders = ['linkcheck']
+sphinx_tabs_disable_tab_closing = True

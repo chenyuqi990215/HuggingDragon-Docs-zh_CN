@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Yuqi Chen, Tian Sun
+# This file is distributed under the same license as the HuggingDragon's
+# Document package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: HuggingDragon's Document \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-19 14:14+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../get_started/download.rst:3
+msgid "Download Datasets from Google Drive"
+msgstr ""
+
+#: ../get_started/download.rst:5
+msgid "We provide processed data for research purpose."
+msgstr ""
+
+#: ../get_started/download.rst:8
+msgid "Processed Road Network"
+msgstr ""
+
+#: ../get_started/download.rst:10
+msgid ""
+"We provide processed road networks on Porto and Beijing in `road network "
+"<https://drive.google.com/drive/folders/1dJ4kosqtbidUCDxVb4sPXjaMew_R-"
+"OWk?usp=drive_link>`_, please download it and put them under ``data`` "
+"folder."
+msgstr ""
+
+#: ../get_started/download.rst:14
+msgid ""
+"Note that the road networks mentioned above may not be the most up-to-"
+"date version, as this information is provided solely for the purpose of "
+"reproducing the results shown in this repository."
+msgstr ""
+
+#: ../get_started/download.rst:17
+msgid "Raw Trajectory Dataset"
+msgstr ""
+
+#: ../get_started/download.rst:19
+msgid "We provide three trajectory datasets."
+msgstr ""
+
+#: ../get_started/download.rst:23
+msgid "Porto"
+msgstr ""
+
+#: ../get_started/download.rst:25
+msgid ""
+"The `Porto <https://www.kaggle.com/datasets/crailtap/taxi-trajectory>`_ "
+"taxi dataset is an open dataset available on Kaggle. We provide map-"
+"matched trajectories in `Porto.txt <https://drive.google.com/file/d"
+"/1O0hozbJtYxmK4gAIGj9fM6cm-moXtzVz/view?usp=drive_link>`_."
+msgstr ""
+
+#: ../get_started/download.rst:27
+msgid ""
+"We also provide code for processing raw trajectory data downloaded from "
+"kaggle website."
+msgstr ""
+
+#: ../get_started/download.rst:33
+msgid "T-drive"
+msgstr ""
+
+#: ../get_started/download.rst:35
+msgid ""
+"The `T-drive <https://www.microsoft.com/en-us/research/publication/t"
+"-drive-trajectory-data-sample/>`_ taxi dataset is an open dataset "
+"provided by Microsoft. It contains trajectory data from taxi rides. We "
+"provide map-matched trajectory in `T-drive.txt "
+"<https://drive.google.com/file/d/146C0NR8w86eG9Q4WJB2RoHdIIlGVSjnj/view?usp=drive_link>`_."
+msgstr ""
+
+#: ../get_started/download.rst:37
+msgid ""
+"We also provide code for processing raw trajectory data downloaded from "
+"Microsoft website:"
+msgstr ""
+
+#: ../get_started/download.rst:43
+msgid "Beijing"
+msgstr ""
+
+#: ../get_started/download.rst:45
+msgid ""
+"The `Beijing <https://github.com/aptx1231/START/blob/master/bj-data-"
+"introduction.md>`_ taxi dataset is provided in Libcity. We provide map-"
+"matched trajectories in `Beijing.txt <https://drive.google.com/file/d"
+"/17eQHZbxTK-hjbR_Na7n_7EMI_i2f9AuV/view?usp=drive_link>`_."
+msgstr ""
+
+#: ../get_started/download.rst:49
+msgid ""
+"For more information about processing Beijing dataset, please see "
+":doc:`new road network <../basic_tutorials/road_network>`."
+msgstr ""
+
+#: ../get_started/download.rst:53
+msgid ""
+"To use the map matching result, please make sure to use the road network "
+"we provided."
+msgstr ""
+
+#: ../get_started/download.rst:58
+msgid ""
+"To generate task specific trajectory datasets, please see "
+":doc:`preprocess <../basic_tutorials/preprocess>`."
+msgstr ""
+
+#: ../get_started/download.rst:60
+msgid ""
+"We provide a processed Porto dataset for trajectory recovery task shown "
+"in :doc:`quick start <quick_start>` in `here "
+"<https://drive.google.com/drive/folders/1QNADHYKQNSo574S04iyOjh4LYySSpC2N?usp=drive_link>`_."
+msgstr ""
+
+#: ../get_started/install.rst:3
+msgid "Advanced Installation"
+msgstr ""
+
+#: ../get_started/quick_start.rst:3
+msgid "Quick Start"
+msgstr ""
+
+#: ../get_started/quick_start.rst:5
+msgid ""
+"In this tutorial, we will walk you through an example of using "
+"HuggingDragon for the Trajectory Recovery task using the Porto dataset."
+msgstr ""
+
+#: ../get_started/quick_start.rst:8
+msgid "Prerequisites"
+msgstr ""
+
+#: ../get_started/quick_start.rst:10
+msgid "Before starting, make sure you have the following:"
+msgstr ""
+
+#: ../get_started/quick_start.rst:12
+msgid "HuggingDragon installed and set up on your machine."
+msgstr ""
+
+#: ../get_started/quick_start.rst:13
+msgid "Python version 3.8 is installed."
+msgstr ""
+
+#: ../get_started/quick_start.rst:16
+msgid "Trajectory Recovery"
+msgstr ""
+
+#: ../get_started/quick_start.rst:20
+msgid "Step 1"
+msgstr ""
+
+#: ../get_started/quick_start.rst:22
+msgid "Download the trajectory dataset"
+msgstr ""
+
+#: ../get_started/quick_start.rst:24
+msgid ""
+"We provide the Porto dataset in `link <https://drive.google.com/file/d"
+"/1O0hozbJtYxmK4gAIGj9fM6cm-moXtzVz/view?usp=drive_link>`_."
+msgstr ""
+
+#: ../get_started/quick_start.rst:26
+msgid "Please download the dataset and put it under ``data/trajectory/Porto/``."
+msgstr ""
+
+#: ../get_started/quick_start.rst:28
+msgid "Step 2"
+msgstr ""
+
+#: ../get_started/quick_start.rst:30
+msgid "Run the Porto dataset with MTrajRec model"
+msgstr ""
+
+#: ../get_started/quick_start.rst:41
+msgid "The results will be saved in the ``outputs/MTrajRec_Porto`` directory."
+msgstr ""
+
+#: ../get_started/quick_start.rst:43
+msgid "Step 3"
+msgstr ""
+
+#: ../get_started/quick_start.rst:45
+msgid "Modifying default parameters in the config file"
+msgstr ""
+
+#: ../get_started/quick_start.rst:47
+msgid ""
+"If you want to modify the default parameters in the YAML config file, "
+"such as changing the `online_features_flag` from `false` to `true`, you "
+"can do the following:"
+msgstr ""
+
+#: ../get_started/quick_start.rst:57
+msgid ""
+"The results will be saved in the "
+"``outputs/MTrajRec_Porto_online_features_flag`` directory."
+msgstr ""
+
+#: ../get_started/structure.rst:3
+msgid "Project Structure"
+msgstr ""
+

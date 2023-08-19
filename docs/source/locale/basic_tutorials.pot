@@ -1,0 +1,355 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Yuqi Chen, Tian Sun
+# This file is distributed under the same license as the HuggingDragon's Document package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: HuggingDragon's Document \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-19 14:14+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../basic_tutorials/config.rst:3
+msgid "Config Settings"
+msgstr ""
+
+#: ../basic_tutorials/config.rst:5
+msgid "The experiment parameter configuration is determined by three aspects: the parameters passed by the command line, the user-defined configuration file (``yaml`` style file), and parameters passed through training entry file."
+msgstr ""
+
+#: ../basic_tutorials/config.rst:8
+msgid "Parameter Priority"
+msgstr ""
+
+#: ../basic_tutorials/config.rst:10
+msgid "command line parameters > user-defined configuration file > parameters passed through training entry file > default parameters of the model module > default parameters of other modules."
+msgstr ""
+
+#: ../basic_tutorials/config.rst:14
+msgid "The parameters with higher priority will override the parameters with the same name of lower priority."
+msgstr ""
+
+#: ../basic_tutorials/config.rst:17
+msgid "User-defined Configuration File"
+msgstr ""
+
+#: ../basic_tutorials/config.rst:20
+msgid "Command Line Parameters"
+msgstr ""
+
+#: ../basic_tutorials/config.rst:23
+msgid "Default Configuration"
+msgstr ""
+
+#: ../basic_tutorials/preprocess.rst:3
+msgid "Trajectory Preprocess"
+msgstr ""
+
+#: ../basic_tutorials/preprocess.rst:5
+msgid "In this tutorial, we show how to generate task specific dataset for training specific task."
+msgstr ""
+
+#: ../basic_tutorials/preprocess.rst:8
+msgid "Trajectory Recovery task"
+msgstr ""
+
+#: ../basic_tutorials/preprocess.rst:10
+msgid "Trajectory dataset for Trajectory Recovery task has the following format."
+msgstr ""
+
+#: ../basic_tutorials/preprocess.rst:25
+msgid "To generate training samples from raw trajectories, run"
+msgstr ""
+
+#: ../basic_tutorials/preprocess.rst:31
+msgid "To generate Porto dataset, run"
+msgstr ""
+
+#: ../basic_tutorials/preprocess.rst:40
+msgid "``epsilon``: Specifies the sample interval of target trajectory."
+msgstr ""
+
+#: ../basic_tutorials/preprocess.rst:41
+msgid "``ratio``: Specifies the downsample rate, when ``ratio=8``, only 12.5% of GPS points will be saved."
+msgstr ""
+
+#: ../basic_tutorials/preprocess.rst:43
+msgid "We provide the `trajectory recovery dataset <https://drive.google.com/drive/folders/1QNADHYKQNSo574S04iyOjh4LYySSpC2N?usp=drive_link>`_ on Porto for easy reproduce the experiment results."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:3
+msgid "Creating a Road Network"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:5
+msgid "In this tutorial, we show how to train with your own road network. We suggest to put road networks under ``data/road_network/``."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:8
+msgid "File Structure of Road Network"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:20
+msgid "``nodeOSM.txt``: This file contains data related to the nodes in the road network, where each line contains the ID, latitude and longitude of an intersection in the road network."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:22
+msgid "``edgeOSM.txt``: This file contains data related to the edges (road segments) in the road network, where each line contains the ID, the node ID that the road segment starts/ends with and the coordinates that make up the road segment."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:24
+msgid "``wayTypeOSM.txt``: This file contains data specifying the type of each road in the network, where each line contains the ID, way type name and way type ID of each road segment."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:26
+msgid "``poiOSM.txt`` (optional): This file contains data related to points of interest (POIs) in the road network, where each line contains the ID, latitude, longitude and type of each POI in the road network."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:30
+msgid "Create From Open Street Map"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:32
+msgid "OpenStreetMap (OSM) is a collaborative mapping project that aims to create a free and editable map of the world. It provides an open and accessible platform for individuals and organizations to contribute geographic data, including roads, buildings, landmarks, and points of interest. OSM data is widely used by various applications, researchers, and developers for mapping, navigation, and spatial analysis purposes."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:34
+msgid "To create a new road network from OSM website, please follow the following steps."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:38
+#: ../basic_tutorials/road_network.rst:113
+msgid "Step 1"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:40
+msgid "Download OSM Data"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:42
+msgid "Download the OSM data for your desired area from `Geofabrik <https://download.geofabrik.de/>`_ in the ``.osm.pbf`` format."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:46
+msgid "Geofabrik provides pre-processed extracts of OSM data for different regions and countries, making it easier to obtain the data you need."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:48
+#: ../basic_tutorials/road_network.rst:129
+msgid "Step 2"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:50
+msgid "Download ``osm2rn`` tool."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:52
+msgid "The osm2rn tool is a powerful software utility designed to extract data from OpenStreetMap (OSM) data. To install the tool, run the following commands."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:59
+msgid "Please follow `osm2rn <https://github.com/sjruan/osm2rn>`_ to install the requirements."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:61
+msgid "Note that to successfully install ``GDAL``, please use the following command instead of the command recommended in ``osm2rn``."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:63
+msgid "Remove conda-forge and use the default channel as suggested in the `issue <https://github.com/ContinuumIO/anaconda-issues/issues/10351>`_:"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:69
+msgid "Step3"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:71
+msgid "Clip the data according to your region of interest (following ``osm2rn``)."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:73
+msgid "To clip the OSM data using ``osm2rn``, run the following command."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:81
+msgid "``input_path``: Specifies the path to the input OSM data file."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:82
+msgid "``output_path``: Specifies the path for the output file that will contain the clipped data."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:83
+msgid "``min_lat``: Specifies the minimum latitude value of the region of interest."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:84
+msgid "``min_lng``: Specifies the minimum longitude value of the region of interest."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:85
+msgid "``max_lat``: Specifies the maximum latitude value of the region of interest."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:86
+msgid "``max_lng``: Specifies the maximum longitude value of the region of interest."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:88
+msgid "Make sure to replace ``<min_lat>``, ``<min_lng>``, ``<max_lat>``, and ``<max_lng>`` with the appropriate values for your specific region of interest."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:90
+msgid "Step 4"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:92
+msgid "Run ``scipts/osm2rn.py`` and store the road network."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:94
+msgid "In the final step of the preprocessing phase, you need to run the modified ``osm2rn.py`` script to generate the road network file in our desired format."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:102
+msgid "Replace ``interest_region.osm.pbf`` with the path and filename of the clipped OSM data file obtained in the previous step."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:103
+msgid "Replace ``interest_region`` with the desired output path and filename for the generated road network file."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:107
+msgid "Extract Extra POI features"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:109
+msgid "Extracting Extra Points of Interest (POI) features from OpenStreetMap (OSM) data enables the extraction of specific information about various locations such as restaurants, banks, parks, and landmarks. By leveraging the rich geospatial data in OSM, this process provides valuable insights for mapping, analysis, and decision-making purposes. To extract POI features from OSM data, please follow the following steps."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:115
+msgid "Install ``osmosis`` tool."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:117
+msgid "``Osmosis`` is a powerful command-line tool for manipulating and processing OpenStreetMap (OSM) data, allowing users to perform various operations such as filtering, merging, and transforming OSM data to meet specific requirements. To install the tool, run the following commands:"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:131
+msgid "Extract POIs from ``.osm.pbf`` format files using ``osmosis`` tool."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:133
+msgid "To extract POI features using ``osmosis`` tool, run the following commands:"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:139
+msgid "Please ensure that ``Java`` is installed."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:141
+msgid "Step 3"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:143
+msgid "Run ``scripts/osm2poi.py`` to extract POIs from xml."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:145
+msgid "In the final step, you need to run the following command to generate ``poiOSM.txt``:"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:151
+msgid "``output_path`` is a dictionary instead of the path to the file."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:155
+msgid "We follow `website <https://wiki.openstreetmap.org/wiki/Key:amenity>`_ to map each POI type to category label."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:158
+msgid "Convert from Libcity Format"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:160
+msgid "`LibCity <https://github.com/LibCity/Bigscity-LibCity>`_ is an open-source Python library developed by the Bigscity Research Group. It provides a comprehensive framework for urban computing and transportation research. We provide tools to convert trajectory datasets and road networks to our format."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:168
+msgid "``input_path``: Specifies the root dictionary of Libcity data."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:169
+msgid "``rn_prefix``: Specifies the prefix name of the road network."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:170
+msgid "``output_rn_path``: Specifies the path to store the road network."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:171
+msgid "``traj_prefix``: Specifies the prefix name of the trajectory."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:172
+msgid "``output_traj_path``: Specifies the path to store the trajectories."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:174
+msgid "Make sure to download required data from Libcity and replace ``<input_path>``, ``<rn_prefix>``, ``<output_rn_path>``, ``<traj_prefix>``, and ``<output_traj_path>`` with the appropriate values."
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:176
+msgid "For instance, to convert Beijing dataset in `link <https://github.com/aptx1231/START/blob/master/bj-data-introduction.md>`_, run"
+msgstr ""
+
+#: ../basic_tutorials/road_network.rst:182
+msgid "The above command will convert road network and trajectory data simultaneously, if you only want to convert the road network, please use the following command:"
+msgstr ""
+
+#: ../basic_tutorials/trajectory.rst:3
+msgid "Creating a Trajectory Dataset"
+msgstr ""
+
+#: ../basic_tutorials/trajectory.rst:6
+msgid "Data Format"
+msgstr ""
+
+#: ../basic_tutorials/trajectory.rst:8
+msgid "The data format of raw trajectory is simple. Each trajectory is represented as following."
+msgstr ""
+
+#: ../basic_tutorials/trajectory.rst:18
+msgid "For raw trajectory without map matching ``rid`` can be ``-1``."
+msgstr ""
+
+#: ../basic_tutorials/trajectory.rst:22
+msgid "``-cnt``: Specifies the ID of the trajectory."
+msgstr ""
+
+#: ../basic_tutorials/trajectory.rst:23
+msgid "``<--optionals>``: Specifies the extra information of the trajectory, like ``--uid <uid>``."
+msgstr ""
+
+#: ../basic_tutorials/trajectory.rst:27
+msgid "Perform Map Matching"
+msgstr ""
+
+#: ../basic_tutorials/trajectory.rst:29
+msgid "To perform map matching, please run the following scripts."
+msgstr ""
+
+#: ../basic_tutorials/trajectory.rst:38
+msgid "Before running the above script, you should first build the C++ file using the following commands."
+msgstr ""
+
+#: ../basic_tutorials/trajectory.rst:45
+msgid "For instance, run the following script for Porto dataset:"
+msgstr ""

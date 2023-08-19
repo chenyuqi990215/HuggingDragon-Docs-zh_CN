@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Yuqi Chen, Tian Sun
+# This file is distributed under the same license as the HuggingDragon's Document package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: HuggingDragon's Document \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-19 14:14+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../task/task.rst:3
+msgid "Task Supports"
+msgstr ""
+
+#: ../task/task.rst:5
+msgid "Currently, the framework supports the following key tasks:"
+msgstr ""
+
+#: ../task/task.rst:7
+msgid "Trajectory Recovery: This task focuses on recovering missing trajectory points from a given trajectory with a low sample rate, enabling the reconstruction of a more complete trajectory."
+msgstr ""
+
+#: ../task/task.rst:9
+msgid "Trajectory Similarity: The framework also facilitates finding the most similar trajectory among a given set of trajectories, allowing for effective comparison and analysis."
+msgstr ""
+
+#: ../task/task.rst:11
+msgid "To provide a comprehensive solution, HuggingDragon intends to expand its capabilities by incorporating additional tasks in the near future. These planned tasks include:"
+msgstr ""
+
+#: ../task/task.rst:13
+msgid "Route Representation Learning (RRL): RRL aims to learn trajectory representations in a self-supervised manner, enabling enhanced understanding and analysis of trajectory data."
+msgstr ""
+
+#: ../task/task.rst:15
+msgid "Estimation of Time of Arrival (ETA): ETA focuses on predicting the travel time of a trajectory, offering valuable insights for planning and optimizing transportation routes."
+msgstr ""
+
+#: ../task/task.rst:17
+msgid "Trajectory Modeling: HuggingDragon will provide the ability to learn a generative model that estimates the density of a set of trajectories, enabling the understanding and modeling of trajectory patterns."
+msgstr ""
+
+#: ../task/task.rst:19
+msgid "Next Point of Interest (POI) Recommendation: This task focuses on predicting the next POI points given a user's history trajectory, providing personalized recommendations and enhancing user experiences in navigation and location-based services."
+msgstr ""
+
+#: ../task/task.rst:21
+msgid "Traffic Signal Control: This task aims to incorporate traffic signal control based on historical trajectories, allowing for intelligent and data-driven management of traffic signals to optimize traffic flow."
+msgstr ""
+
+#: ../task/task.rst:23
+msgid "With these planned tasks, HuggingDragon aspires to provide a comprehensive and unified framework that empowers researchers and practitioners in the ITS field to address critical challenges and drive advancements in trajectory-based applications."
+msgstr ""
+
+#: ../task/trajrec.rst:3
+msgid "Task: Trajectory Recovery"
+msgstr ""
+
+#: ../task/trajrec.rst:8
+msgid "Introduction"
+msgstr ""
+
+#: ../task/trajrec.rst:10
+msgid "GPS trajectories are essential foundations for applications such as travel time estimation, traffic prediction, and trajectory similarity measurement. However, real-life trajectories often suffer from low sample rates, limiting their effectiveness. Additionally, existing map matching algorithms face challenges with low-sample trajectories. Trajectory recovery aims to increase the sample rate by filling in missing points, enriching low-sample trajectories."
+msgstr ""
+
+#: ../task/trajrec.rst:13
+msgid "Formal Definition"
+msgstr ""
+
+#: ../task/trajrec.rst:15
+msgid "Given a low-sample raw GPS trajectory with measurement errors, the task of trajectory recovery aims to recover the real map-matched trajectory. Specifically, for each low-sample trajectory, it infers the missing GPS points and maps each GPS point (including the GPS points in the input trajectory) onto the road network to obtain the real GPS locations of the moving trajectory [1]_."
+msgstr ""
+
+#: ../task/trajrec.rst:18
+msgid "Citations"
+msgstr ""
+
+#: ../task/trajrec.rst:20
+msgid "Chen, Yuqi, et al. \"RNTrajRec: Road Network Enhanced Trajectory Recovery with Spatial-Temporal Transformer.\" arXiv preprint arXiv:2211.13234 (2022)."
+msgstr ""

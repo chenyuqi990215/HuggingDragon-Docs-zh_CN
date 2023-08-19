@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creating a Road Network &mdash; HuggingDragon&#39;s Document release 1.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/tabs.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Creating a Trajectory Dataset" href="trajectory.html" />
+    <link rel="prev" title="Project Structure" href="../get_started/structure.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            HuggingDragon's Document
+              <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../get_started/download.html">Download Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../get_started/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../get_started/quick_start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../get_started/structure.html">Project Structure</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Basic Tutorials</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Create a Road Network</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#file-structure-of-road-network">File Structure of Road Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-from-open-street-map">Create From Open Street Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#extract-extra-poi-features">Extract Extra POI features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#convert-from-libcity-format">Convert from Libcity Format</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="trajectory.html">Create a Trajectory Dataset</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preprocess.html">Trajectory Preprocess</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Config Settings</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Advanced Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/tips.html">Tips for Coding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/config.html">Write Config File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/network.html">Customize Network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/task.html">Customize Task</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Supported Tasks</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../task/task.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../task/trajrec.html">Trajectory Recovery</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Visualization</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../visualization/trajectory_recovery.html">Trajectory Recovery</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">HuggingDragon's Document</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Creating a Road Network</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/basic_tutorials/road_network.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="creating-a-road-network">
+<h1>Creating a Road Network<a class="headerlink" href="#creating-a-road-network" title="Permalink to this heading"></a></h1>
+<p>In this tutorial, we show how to train with your own road network. We suggest to put road networks under <code class="docutils literal notranslate"><span class="pre">data/road_network/</span></code>.</p>
+<section id="file-structure-of-road-network">
+<h2>File Structure of Road Network<a class="headerlink" href="#file-structure-of-road-network" title="Permalink to this heading"></a></h2>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">data/</span>
+<span class="go">└── road_network/</span>
+<span class="go">    └── name/</span>
+<span class="go">        ├── nodeOSM.txt</span>
+<span class="go">        ├── edgeOSM.txt</span>
+<span class="go">        ├── wayTypeOSM.txt</span>
+<span class="go">        └── poiOSM.txt (optional)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">nodeOSM.txt</span></code>: This file contains data related to the nodes in the road network, where each line contains the ID, latitude and longitude of an intersection in the road network.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">edgeOSM.txt</span></code>: This file contains data related to the edges (road segments) in the road network, where each line contains the ID, the node ID that the road segment starts/ends with and the coordinates that make up the road segment.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">wayTypeOSM.txt</span></code>: This file contains data specifying the type of each road in the network, where each line contains the ID, way type name and way type ID of each road segment.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">poiOSM.txt</span></code> (optional): This file contains data related to points of interest (POIs) in the road network, where each line contains the ID, latitude, longitude and type of each POI in the road network.</p></li>
+</ul>
+</section>
+<section id="create-from-open-street-map">
+<h2>Create From Open Street Map<a class="headerlink" href="#create-from-open-street-map" title="Permalink to this heading"></a></h2>
+<p>OpenStreetMap (OSM) is a collaborative mapping project that aims to create a free and editable map of the world. It provides an open and accessible platform for individuals and organizations to contribute geographic data, including roads, buildings, landmarks, and points of interest. OSM data is widely used by various applications, researchers, and developers for mapping, navigation, and spatial analysis purposes.</p>
+<p>To create a new road network from OSM website, please follow the following steps.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Step 1</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Step 2</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">Step3</button><button aria-controls="panel-0-0-3" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-3" name="0-3" role="tab" tabindex="-1">Step 4</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><ul class="simple">
+<li><p>Download OSM Data</p></li>
+</ul>
+<p>Download the OSM data for your desired area from <a class="reference external" href="https://download.geofabrik.de/">Geofabrik</a> in the <code class="docutils literal notranslate"><span class="pre">.osm.pbf</span></code> format.</p>
+<img alt="../_images/osm.png" src="../_images/osm.png" />
+<p>Geofabrik provides pre-processed extracts of OSM data for different regions and countries, making it easier to obtain the data you need.</p>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><ul class="simple">
+<li><p>Download <code class="docutils literal notranslate"><span class="pre">osm2rn</span></code> tool.</p></li>
+</ul>
+<p>The osm2rn tool is a powerful software utility designed to extract data from OpenStreetMap (OSM) data. To install the tool, run the following commands.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">git clone https://github.com/sjruan/osm2rn.git</span>
+<span class="go">cd osm2rn</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Please follow <a class="reference external" href="https://github.com/sjruan/osm2rn">osm2rn</a> to install the requirements.</p>
+</div>
+<p>Note that to successfully install <code class="docutils literal notranslate"><span class="pre">GDAL</span></code>, please use the following command instead of the command recommended in <code class="docutils literal notranslate"><span class="pre">osm2rn</span></code>.</p>
+<p>Remove conda-forge and use the default channel as suggested in the <a class="reference external" href="https://github.com/ContinuumIO/anaconda-issues/issues/10351">issue</a>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">conda install --channel defaults gdal</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><ul class="simple">
+<li><p>Clip the data according to your region of interest (following <code class="docutils literal notranslate"><span class="pre">osm2rn</span></code>).</p></li>
+</ul>
+<p>To clip the OSM data using <code class="docutils literal notranslate"><span class="pre">osm2rn</span></code>, run the following command.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python osm_clip.py --input_path asia-latest.osm.pbf --output_path interest_region.osm.pbf --min_lat &lt;min_lat&gt; --min_lng &lt;min_lng&gt; --max_lat &lt;max_lat&gt; --max_lng &lt;max_lng&gt;</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">input_path</span></code>: Specifies the path to the input OSM data file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">output_path</span></code>: Specifies the path for the output file that will contain the clipped data.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">min_lat</span></code>: Specifies the minimum latitude value of the region of interest.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">min_lng</span></code>: Specifies the minimum longitude value of the region of interest.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_lat</span></code>: Specifies the maximum latitude value of the region of interest.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_lng</span></code>: Specifies the maximum longitude value of the region of interest.</p></li>
+</ul>
+<p>Make sure to replace <code class="docutils literal notranslate"><span class="pre">&lt;min_lat&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;min_lng&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;max_lat&gt;</span></code>, and <code class="docutils literal notranslate"><span class="pre">&lt;max_lng&gt;</span></code> with the appropriate values for your specific region of interest.</p>
+</div>
+</div><div aria-labelledby="tab-0-0-3" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-3" name="0-3" role="tabpanel" tabindex="0"><ul class="simple">
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">scipts/osm2rn.py</span></code> and store the road network.</p></li>
+</ul>
+<p>In the final step of the preprocessing phase, you need to run the modified <code class="docutils literal notranslate"><span class="pre">osm2rn.py</span></code> script to generate the road network file in our desired format.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python -m scripts.osm2rn --input_path interest_region.osm.pbf --output_path interest_region</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p>Replace <code class="docutils literal notranslate"><span class="pre">interest_region.osm.pbf</span></code> with the path and filename of the clipped OSM data file obtained in the previous step.</p></li>
+<li><p>Replace <code class="docutils literal notranslate"><span class="pre">interest_region</span></code> with the desired output path and filename for the generated road network file.</p></li>
+</ul>
+</div>
+</div></div>
+</section>
+<section id="extract-extra-poi-features">
+<h2>Extract Extra POI features<a class="headerlink" href="#extract-extra-poi-features" title="Permalink to this heading"></a></h2>
+<p>Extracting Extra Points of Interest (POI) features from OpenStreetMap (OSM) data enables the extraction of specific information about various locations such as restaurants, banks, parks, and landmarks. By leveraging the rich geospatial data in OSM, this process provides valuable insights for mapping, analysis, and decision-making purposes. To extract POI features from OSM data, please follow the following steps.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-1-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-1-1-0" name="1-0" role="tab" tabindex="0">Step 1</button><button aria-controls="panel-1-1-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-1-1-1" name="1-1" role="tab" tabindex="-1">Step 2</button><button aria-controls="panel-1-1-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-1-1-2" name="1-2" role="tab" tabindex="-1">Step 3</button></div><div aria-labelledby="tab-1-1-0" class="sphinx-tabs-panel" id="panel-1-1-0" name="1-0" role="tabpanel" tabindex="0"><ul class="simple">
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">osmosis</span></code> tool.</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">Osmosis</span></code> is a powerful command-line tool for manipulating and processing OpenStreetMap (OSM) data, allowing users to perform various operations such as filtering, merging, and transforming OSM data to meet specific requirements. To install the tool, run the following commands:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">wget https://github.com/openstreetmap/osmosis/releases/download/0.48.3/osmosis-0.48.3.tgz</span>
+<span class="go">mkdir osmosis</span>
+<span class="go">mv osmosis-0.48.3.tgz osmosis</span>
+<span class="go">cd osmosis</span>
+<span class="go">tar xvfz osmosis-0.48.3.tgz</span>
+<span class="go">rm osmosis-0.48.3.tgz</span>
+<span class="go">chmod a+x bin/osmosis</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-1-1" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-1" name="1-1" role="tabpanel" tabindex="0"><ul class="simple">
+<li><p>Extract POIs from <code class="docutils literal notranslate"><span class="pre">.osm.pbf</span></code> format files using <code class="docutils literal notranslate"><span class="pre">osmosis</span></code> tool.</p></li>
+</ul>
+<p>To extract POI features using <code class="docutils literal notranslate"><span class="pre">osmosis</span></code> tool, run the following commands:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">bin/osmosis --rbf interest_region.osm.pbf --nk keyList=&quot;amenity&quot; --wx interest_region.osm</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Please ensure that <code class="docutils literal notranslate"><span class="pre">Java</span></code> is installed.</p>
+</div>
+</div><div aria-labelledby="tab-1-1-2" class="sphinx-tabs-panel" hidden="true" id="panel-1-1-2" name="1-2" role="tabpanel" tabindex="0"><ul class="simple">
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">scripts/osm2poi.py</span></code> to extract POIs from xml.</p></li>
+</ul>
+<p>In the final step, you need to run the following command to generate <code class="docutils literal notranslate"><span class="pre">poiOSM.txt</span></code>:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python -m scripts.osm2poi --input_path interest_region.osm --output_path interest_region</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><code class="docutils literal notranslate"><span class="pre">output_path</span></code> is a dictionary instead of the path to the file.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We follow <a class="reference external" href="https://wiki.openstreetmap.org/wiki/Key:amenity">website</a> to map each POI type to category label.</p>
+</div>
+</div></div>
+</section>
+<section id="convert-from-libcity-format">
+<h2>Convert from Libcity Format<a class="headerlink" href="#convert-from-libcity-format" title="Permalink to this heading"></a></h2>
+<p><a class="reference external" href="https://github.com/LibCity/Bigscity-LibCity">LibCity</a> is an open-source Python library developed by the Bigscity Research Group. It provides a comprehensive framework for urban computing and transportation research. We provide tools to convert trajectory datasets and road networks to our format.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python -m scripts.libcity --input_path &lt;input_path&gt; --rn_prefix &lt;rn_prefix&gt; --output_rn_path &lt;output_rn_path&gt; --traj_prefix &lt;traj_prefix&gt; --output_traj_path &lt;output_traj_path&gt;</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">input_path</span></code>: Specifies the root dictionary of Libcity data.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rn_prefix</span></code>: Specifies the prefix name of the road network.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">output_rn_path</span></code>: Specifies the path to store the road network.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">traj_prefix</span></code>: Specifies the prefix name of the trajectory.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">output_traj_path</span></code>: Specifies the path to store the trajectories.</p></li>
+</ul>
+<p>Make sure to download required data from Libcity and replace <code class="docutils literal notranslate"><span class="pre">&lt;input_path&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;rn_prefix&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;output_rn_path&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&lt;traj_prefix&gt;</span></code>, and <code class="docutils literal notranslate"><span class="pre">&lt;output_traj_path&gt;</span></code> with the appropriate values.</p>
+</div>
+<p>For instance, to convert Beijing dataset in <a class="reference external" href="https://github.com/aptx1231/START/blob/master/bj-data-introduction.md">link</a>, run</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python -m scripts.libcity --input_path &lt;input_path&gt; --rn_prefix bj_roadmap_edge --output_rn_path ./data/road_network/Beijing --traj_prefix traj_bj_11 --output_traj_path &lt;output_traj_path&gt;</span>
+</pre></div>
+</div>
+<p>The above command will convert road network and trajectory data simultaneously, if you only want to convert the road network, please use the following command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python -m scripts.libcity --input_path &lt;input_path&gt; --rn_prefix &lt;rn_prefix&gt; --output_rn_path &lt;output_rn_path&gt; --task rn</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../get_started/structure.html" class="btn btn-neutral float-left" title="Project Structure" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="trajectory.html" class="btn btn-neutral float-right" title="Creating a Trajectory Dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Yuqi Chen, Tian Sun.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
