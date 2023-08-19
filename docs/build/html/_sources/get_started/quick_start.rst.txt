@@ -27,18 +27,18 @@ Trajectory Recovery
 
     .. tab:: Step 2
 
-        * Run the Porto dataset with MTrajRec model
+        * Run the Porto dataset with RNTrajRec model
 
         .. code-block:: console
 
             # Create the output directory
-            mkdir -p outputs/MTrajRec_Porto
+            mkdir -p outputs/RNTrajRec_Porto
 
             # Run Training
-            python -m huggingdragon.entry.train_trajectory_recovery config/trajectory_recovery/MTrajRec_Porto.yml
+            python -m huggingdragon.entry.train_trajectory_recovery config/trajectory_recovery/RNTrajRec_Porto.yml
 
 
-        The results will be saved in the ``outputs/MTrajRec_Porto`` directory.
+        The results will be saved in the ``outputs/RNTrajRec_Porto`` directory.
 
     .. tab:: Step 3
 
@@ -48,10 +48,10 @@ Trajectory Recovery
 
         .. code-block:: console
 
-            mkdir -p outputs/MTrajRec_Porto_online_features_flag
+            mkdir -p outputs/RNTrajRec_Porto_online_features_flag
 
-            python -m huggingdragon.entry.train_trajectory_recovery config/trajectory_recovery/MTrajRec_Porto.yml \
+            python -m huggingdragon.entry.train_trajectory_recovery config/trajectory_recovery/RNTrajRec_Porto.yml \
                 --flag.online_features_flag true \
-                --runtime.output_dir outputs/MTrajRec_Porto_online_features_flag
+                --runtime.output_dir outputs/RNTrajRec_Porto_online_features_flag
 
-        The results will be saved in the ``outputs/MTrajRec_Porto_online_features_flag`` directory.
+        The results will be saved in the ``outputs/RNTrajRec_Porto_online_features_flag`` directory.

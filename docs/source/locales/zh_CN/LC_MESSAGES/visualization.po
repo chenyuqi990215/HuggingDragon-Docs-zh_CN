@@ -28,7 +28,7 @@ msgstr "轨迹还原任务可视化"
 msgid ""
 "In this tutorial, we show the process of visualizing trajectory recovery "
 "tasks using pretrained models."
-msgstr "在本教程中，我们将展示使用预训练模型可视化轨迹恢复任务的过程。"
+msgstr "在本教程中，将展示使用预训练模型可视化轨迹恢复任务的过程。"
 
 #: ../visualization/trajectory_recovery.ipynb:14
 msgid "Step 1: Import necessary packages."
@@ -43,7 +43,7 @@ msgid ""
 "In this step, we will first download the checkpoint from Google Drive. "
 "Next, the configuration file will be loaded, and the runtime parameters "
 "will be obtained from the YAML config."
-msgstr "在这一步中，我们首先将从Google Drive下载预训练模型文件。接下来，将加载配置文件，并从YAML配置中获取运行时参数。"
+msgstr "在这一步中，首先将从Google Drive下载预训练模型文件。接下来，将加载配置文件，并从YAML配置中获取运行时参数。"
 
 #: ../visualization/trajectory_recovery.ipynb:185
 msgid "Step 3: Obtain the outputs"
@@ -53,7 +53,7 @@ msgstr "第三步：获取模型输出"
 msgid ""
 "In this step, we first create a trajectory, and then forward it to the "
 "network to obtain the recovered trajectory."
-msgstr "在这一步中，我们首先创建一个轨迹，然后将其作为模型的输入，以获取恢复的轨迹。"
+msgstr "在这一步中，首先创建一个轨迹，然后将其作为模型的输入，以获取恢复的轨迹。"
 
 #: ../visualization/trajectory_recovery.ipynb:252
 msgid "Step 4: Visualization"
@@ -64,5 +64,5 @@ msgid ""
 "We use ``folium`` package to visualize the input trajectory as well as "
 "the output trajectory. Orange stars represent the input trajectory, while"
 " the purple line is the output trajectory."
-msgstr "在这一步中，我们使用``folium``包来可视化输入轨迹和输出轨迹。紫色的圆圈表示输入轨迹，而线条表示输出的轨迹。"
+msgstr "在这一步中，使用``folium``包来可视化输入轨迹和输出轨迹。紫色的圆圈表示输入轨迹，而线条表示输出的轨迹。"
 
