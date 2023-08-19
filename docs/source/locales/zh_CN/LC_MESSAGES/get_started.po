@@ -186,12 +186,12 @@ msgid "Step 2"
 msgstr "第二步"
 
 #: ../get_started/quick_start.rst:30
-msgid "Run the Porto dataset with MTrajRec model"
-msgstr "如果想要使用MTrajRec模型在波尔图数据集上进行训练，请谁用下面的命令。"
+msgid "Run the Porto dataset with RNTrajRec model"
+msgstr "如果想要使用RNTrajRec模型在波尔图数据集上进行训练，请谁用下面的命令。"
 
 #: ../get_started/quick_start.rst:41
-msgid "The results will be saved in the ``outputs/MTrajRec_Porto`` directory."
-msgstr "模型训练的结果将保存在 ``outputs/MTrajRec_Porto`` 目录中。"
+msgid "The results will be saved in the ``outputs/RNTrajRec_Porto`` directory."
+msgstr "模型训练的结果将保存在 ``outputs/RNTrajRec_Porto`` 目录中。"
 
 #: ../get_started/quick_start.rst:43
 msgid "Step 3"
@@ -211,8 +211,8 @@ msgstr "如果您想修改YAML配置文件中的默认参数，比如将 ``onlin
 #: ../get_started/quick_start.rst:57
 msgid ""
 "The results will be saved in the "
-"``outputs/MTrajRec_Porto_online_features_flag`` directory."
-msgstr "模型训练的结果将保存在 ``outputs/MTrajRec_Porto_online_features_flag`` 目录中。"
+"``outputs/RNTrajRec_Porto_online_features_flag`` directory."
+msgstr "模型训练的结果将保存在 ``outputs/RNTrajRec_Porto_online_features_flag`` 目录中。"
 
 #: ../get_started/structure.rst:3
 msgid "Project Structure"
