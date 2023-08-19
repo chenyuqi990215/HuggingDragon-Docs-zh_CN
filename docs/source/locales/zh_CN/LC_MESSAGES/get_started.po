@@ -22,15 +22,15 @@ msgstr ""
 
 #: ../get_started/download.rst:3
 msgid "Download Datasets from Google Drive"
-msgstr ""
+msgstr "从Google Drive中下载数据集"
 
 #: ../get_started/download.rst:5
 msgid "We provide processed data for research purpose."
-msgstr ""
+msgstr "我们提供已处理的数据供研究使用。"
 
 #: ../get_started/download.rst:8
 msgid "Processed Road Network"
-msgstr ""
+msgstr "处理路网结构"
 
 #: ../get_started/download.rst:10
 msgid ""
@@ -38,26 +38,26 @@ msgid ""
 "<https://drive.google.com/drive/folders/1dJ4kosqtbidUCDxVb4sPXjaMew_R-"
 "OWk?usp=drive_link>`_, please download it and put them under ``data`` "
 "folder."
-msgstr ""
+msgstr "我们在波尔图和北京提供了经过处理的道路网络数据，`下载地址 <https://drive.google.com/drive/folders/1dJ4kosqtbidUCDxVb4sPXjaMew_R-OWk?usp=drive_link>`_，请下载并将其放在``data``文件夹下。"
 
 #: ../get_started/download.rst:14
 msgid ""
 "Note that the road networks mentioned above may not be the most up-to-"
 "date version, as this information is provided solely for the purpose of "
 "reproducing the results shown in this repository."
-msgstr ""
+msgstr "请注意，上述提到的道路网络可能不是最新版本，因为此信息仅用于复现此存储库中显示的结果。"
 
 #: ../get_started/download.rst:17
 msgid "Raw Trajectory Dataset"
-msgstr ""
+msgstr "原始轨迹数据集"
 
 #: ../get_started/download.rst:19
 msgid "We provide three trajectory datasets."
-msgstr ""
+msgstr "我们提供了三个轨迹数据集。"
 
 #: ../get_started/download.rst:23
 msgid "Porto"
-msgstr ""
+msgstr "波尔图数据集"
 
 #: ../get_started/download.rst:25
 msgid ""
@@ -65,17 +65,17 @@ msgid ""
 "taxi dataset is an open dataset available on Kaggle. We provide map-"
 "matched trajectories in `Porto.txt <https://drive.google.com/file/d"
 "/1O0hozbJtYxmK4gAIGj9fM6cm-moXtzVz/view?usp=drive_link>`_."
-msgstr ""
+msgstr "`波尔图 <https://www.kaggle.com/datasets/crailtap/taxi-trajectory>`_ 出租车数据集是Kaggle上的一个开放数据集。我们提供了在 `Porto.txt <https://drive.google.com/file/d/1O0hozbJtYxmK4gAIGj9fM6cm-moXtzVz/view?usp=drive_link>`_ 中的地图匹配轨迹。"
 
 #: ../get_started/download.rst:27
 msgid ""
 "We also provide code for processing raw trajectory data downloaded from "
 "kaggle website."
-msgstr ""
+msgstr "我们还提供了用于处理从 Kaggle 网站下载的原始轨迹数据的代码。"
 
 #: ../get_started/download.rst:33
 msgid "T-drive"
-msgstr ""
+msgstr "T-drive数据集"
 
 #: ../get_started/download.rst:35
 msgid ""
@@ -84,17 +84,17 @@ msgid ""
 "provided by Microsoft. It contains trajectory data from taxi rides. We "
 "provide map-matched trajectory in `T-drive.txt "
 "<https://drive.google.com/file/d/146C0NR8w86eG9Q4WJB2RoHdIIlGVSjnj/view?usp=drive_link>`_."
-msgstr ""
+msgstr "`T-drive <https://www.microsoft.com/en-us/research/publication/t-drive-trajectory-data-sample/>`_ 出租车数据集是由微软提供的一个开放数据集，包含出租车行程的轨迹数据。我们在 `T-drive.txt <https://drive.google.com/file/d/146C0NR8w86eG9Q4WJB2RoHdIIlGVSjnj/view?usp=drive_link>`_ 中提供了地图匹配的轨迹。"
 
 #: ../get_started/download.rst:37
 msgid ""
 "We also provide code for processing raw trajectory data downloaded from "
 "Microsoft website:"
-msgstr ""
+msgstr "我们还提供了用于处理从微软网站下载的原始轨迹数据的代码。"
 
 #: ../get_started/download.rst:43
 msgid "Beijing"
-msgstr ""
+msgstr "北京数据集"
 
 #: ../get_started/download.rst:45
 msgid ""
@@ -102,50 +102,50 @@ msgid ""
 "introduction.md>`_ taxi dataset is provided in Libcity. We provide map-"
 "matched trajectories in `Beijing.txt <https://drive.google.com/file/d"
 "/17eQHZbxTK-hjbR_Na7n_7EMI_i2f9AuV/view?usp=drive_link>`_."
-msgstr ""
+msgstr "`北京出租车数据集 <https://github.com/aptx1231/START/blob/master/bj-data-introduction.md>`_ 是在Libcity中提供的。我们在 `Beijing.txt <https://drive.google.com/file/d/17eQHZbxTK-hjbR_Na7n_7EMI_i2f9AuV/view?usp=drive_link>`_ 中提供了地图匹配的轨迹。"
 
 #: ../get_started/download.rst:49
 msgid ""
 "For more information about processing Beijing dataset, please see "
 ":doc:`new road network <../basic_tutorials/road_network>`."
-msgstr ""
+msgstr "要了解有关处理北京数据集的更多信息，请参阅 :doc:`创建新的路网 <../basic_tutorials/road_network>`。"
 
 #: ../get_started/download.rst:53
 msgid ""
 "To use the map matching result, please make sure to use the road network "
 "we provided."
-msgstr ""
+msgstr "为了使用地图匹配结果，请确保使用我们提供的道路网络。"
 
 #: ../get_started/download.rst:58
 msgid ""
 "To generate task specific trajectory datasets, please see "
 ":doc:`preprocess <../basic_tutorials/preprocess>`."
-msgstr ""
+msgstr "如果需要生成特定任务的轨迹数据集，请参阅 :doc:`轨迹预处理 <../basic_tutorials/preprocess>`。"
 
 #: ../get_started/download.rst:60
 msgid ""
 "We provide a processed Porto dataset for trajectory recovery task shown "
 "in :doc:`quick start <quick_start>` in `here "
 "<https://drive.google.com/drive/folders/1QNADHYKQNSo574S04iyOjh4LYySSpC2N?usp=drive_link>`_."
-msgstr ""
+msgstr "我们为在 :doc:`快速入门教程 <quick_start>` 中展示的轨迹恢复任务提供了经过处理的波尔图数据集，下载链接在 `此处 <https://drive.google.com/drive/folders/1QNADHYKQNSo574S04iyOjh4LYySSpC2N?usp=drive_link>`_。"
 
 #: ../get_started/install.rst:3
 msgid "Advanced Installation"
-msgstr ""
+msgstr "高级安装"
 
 #: ../get_started/quick_start.rst:3
 msgid "Quick Start"
-msgstr ""
+msgstr "快速入门"
 
 #: ../get_started/quick_start.rst:5
 msgid ""
 "In this tutorial, we will walk you through an example of using "
 "HuggingDragon for the Trajectory Recovery task using the Porto dataset."
-msgstr ""
+msgstr "在本教程中，我们将为您演示如何使用HuggingDragon来执行使用波尔图数据集的轨迹恢复任务的示例。"
 
 #: ../get_started/quick_start.rst:8
 msgid "Prerequisites"
-msgstr ""
+msgstr "前置要求"
 
 #: ../get_started/quick_start.rst:10
 msgid "Before starting, make sure you have the following:"
@@ -153,68 +153,68 @@ msgstr ""
 
 #: ../get_started/quick_start.rst:12
 msgid "HuggingDragon installed and set up on your machine."
-msgstr ""
+msgstr "在开始之前，请确保您具备以下条件："
 
 #: ../get_started/quick_start.rst:13
 msgid "Python version 3.8 is installed."
-msgstr ""
+msgstr "已安装Python版本3.8。"
 
 #: ../get_started/quick_start.rst:16
 msgid "Trajectory Recovery"
-msgstr ""
+msgstr "轨迹还原"
 
 #: ../get_started/quick_start.rst:20
 msgid "Step 1"
-msgstr ""
+msgstr "第一步"
 
 #: ../get_started/quick_start.rst:22
 msgid "Download the trajectory dataset"
-msgstr ""
+msgstr "下载轨迹数据集"
 
 #: ../get_started/quick_start.rst:24
 msgid ""
 "We provide the Porto dataset in `link <https://drive.google.com/file/d"
 "/1O0hozbJtYxmK4gAIGj9fM6cm-moXtzVz/view?usp=drive_link>`_."
-msgstr ""
+msgstr "我们在 `链接 <https://drive.google.com/file/d/1O0hozbJtYxmK4gAIGj9fM6cm-moXtzVz/view?usp=drive_link>`_ 中提供了波尔图数据集。"
 
 #: ../get_started/quick_start.rst:26
 msgid "Please download the dataset and put it under ``data/trajectory/Porto/``."
-msgstr ""
+msgstr "请下载数据集并将其放在 ``data/trajectory/Porto/`` 目录下。"
 
 #: ../get_started/quick_start.rst:28
 msgid "Step 2"
-msgstr ""
+msgstr "第二步"
 
 #: ../get_started/quick_start.rst:30
 msgid "Run the Porto dataset with MTrajRec model"
-msgstr ""
+msgstr "使用MTrajRec模型运行波尔图数据集。"
 
 #: ../get_started/quick_start.rst:41
 msgid "The results will be saved in the ``outputs/MTrajRec_Porto`` directory."
-msgstr ""
+msgstr "结果将保存在 ``outputs/MTrajRec_Porto`` 目录中。"
 
 #: ../get_started/quick_start.rst:43
 msgid "Step 3"
-msgstr ""
+msgstr "第三步"
 
 #: ../get_started/quick_start.rst:45
 msgid "Modifying default parameters in the config file"
-msgstr ""
+msgstr "在配置文件中修改默认参数。"
 
 #: ../get_started/quick_start.rst:47
 msgid ""
 "If you want to modify the default parameters in the YAML config file, "
 "such as changing the `online_features_flag` from `false` to `true`, you "
 "can do the following:"
-msgstr ""
+msgstr "如果您想修改YAML配置文件中的默认参数，比如将 ``online_features_flag`` 从 ``false`` 更改为 ``true``，可以按照以下步骤进行操作："
 
 #: ../get_started/quick_start.rst:57
 msgid ""
 "The results will be saved in the "
 "``outputs/MTrajRec_Porto_online_features_flag`` directory."
-msgstr ""
+msgstr "结果将保存在 ``outputs/MTrajRec_Porto_online_features_flag`` 目录中。"
 
 #: ../get_started/structure.rst:3
 msgid "Project Structure"
-msgstr ""
+msgstr "项目文件结构"
 

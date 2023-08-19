@@ -54,21 +54,21 @@ msgid ""
 "Route Representation Learning (RRL): RRL aims to learn trajectory "
 "representations in a self-supervised manner, enabling enhanced "
 "understanding and analysis of trajectory data."
-msgstr ""
+msgstr "为了提供综合的解决方案，HuggingDragon计划在不久的将来扩展其能力，加入更多的任务。这些计划中的任务包括："
 
 #: ../task/task.rst:15
 msgid ""
 "Estimation of Time of Arrival (ETA): ETA focuses on predicting the travel"
 " time of a trajectory, offering valuable insights for planning and "
 "optimizing transportation routes."
-msgstr ""
+msgstr "行程时间估计（ETA）：ETA关注于预测轨迹的行程时间，为规划和优化交通路线提供了有价值的见解。"
 
 #: ../task/task.rst:17
 msgid ""
 "Trajectory Modeling: HuggingDragon will provide the ability to learn a "
 "generative model that estimates the density of a set of trajectories, "
 "enabling the understanding and modeling of trajectory patterns."
-msgstr ""
+msgstr "轨迹建模：该任务旨在学习一个生成模型的能力，该模型可以估计一组轨迹的密度，从而实现对轨迹模式的理解和建模。"
 
 #: ../task/task.rst:19
 msgid ""
@@ -76,14 +76,14 @@ msgid ""
 "predicting the next POI points given a user's history trajectory, "
 "providing personalized recommendations and enhancing user experiences in "
 "navigation and location-based services."
-msgstr ""
+msgstr "下一个兴趣点（POI）推荐：该任务专注于根据用户的历史轨迹预测下一个POI点，提供个性化推荐，增强导航和基于位置的服务中的用户体验。"
 
 #: ../task/task.rst:21
 msgid ""
 "Traffic Signal Control: This task aims to incorporate traffic signal "
 "control based on historical trajectories, allowing for intelligent and "
 "data-driven management of traffic signals to optimize traffic flow."
-msgstr ""
+msgstr "交通信号控制：该任务旨在基于历史轨迹实现交通信号控制，从而实现智能和数据驱动的交通信号管理，优化交通流量。"
 
 #: ../task/task.rst:23
 msgid ""
@@ -91,15 +91,15 @@ msgid ""
 "comprehensive and unified framework that empowers researchers and "
 "practitioners in the ITS field to address critical challenges and drive "
 "advancements in trajectory-based applications."
-msgstr ""
+msgstr "通过这些计划中的任务，HuggingDragon旨在提供一个全面和统一的框架，为智能交通系统领域的研究人员和从业者赋能，以解决关键挑战并推动轨迹基础应用的发展。"
 
 #: ../task/trajrec.rst:3
 msgid "Task: Trajectory Recovery"
-msgstr ""
+msgstr "轨迹还原任务"
 
 #: ../task/trajrec.rst:8
 msgid "Introduction"
-msgstr ""
+msgstr "任务介绍"
 
 #: ../task/trajrec.rst:10
 msgid ""
@@ -110,11 +110,11 @@ msgid ""
 " algorithms face challenges with low-sample trajectories. Trajectory "
 "recovery aims to increase the sample rate by filling in missing points, "
 "enriching low-sample trajectories."
-msgstr ""
+msgstr "GPS轨迹是诸如行程时间估计、交通预测和轨迹相似性测量等应用的基础。然而，现实生活中的轨迹经常受到低采样率的限制，从而限制了它们的有效性。此外，现有的地图匹配算法在处理低采样率轨迹时面临挑战。轨迹恢复旨在通过填充缺失点来提高采样率，丰富低采样率轨迹。"
 
 #: ../task/trajrec.rst:13
 msgid "Formal Definition"
-msgstr ""
+msgstr "任务正式定义"
 
 #: ../task/trajrec.rst:15
 msgid ""
@@ -124,16 +124,18 @@ msgid ""
 "points and maps each GPS point (including the GPS points in the input "
 "trajectory) onto the road network to obtain the real GPS locations of the"
 " moving trajectory [1]_."
-msgstr ""
+msgstr "在给定低采样率的原始GPS轨迹和测量误差的情况下，轨迹恢复的任务旨在恢复真实的地图匹配轨迹。具体来说，对于每个低采样率轨迹，它推断缺失的GPS点，并将每个GPS点（包括输入轨迹中的GPS点）映射到道路网络上，以获取移动轨迹的真实GPS位置 [1]_。"
 
 #: ../task/trajrec.rst:18
 msgid "Citations"
-msgstr ""
+msgstr "参考文献"
 
 #: ../task/trajrec.rst:20
 msgid ""
 "Chen, Yuqi, et al. \"RNTrajRec: Road Network Enhanced Trajectory Recovery"
 " with Spatial-Temporal Transformer.\" arXiv preprint arXiv:2211.13234 "
 "(2022)."
-msgstr ""
+msgstr "Chen, Yuqi, et al. \"RNTrajRec: Road Network Enhanced Trajectory Recovery"
+" with Spatial-Temporal Transformer.\" arXiv preprint arXiv:2211.13234 "
+"(2022)."
 
