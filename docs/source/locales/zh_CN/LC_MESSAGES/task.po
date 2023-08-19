@@ -114,7 +114,7 @@ msgstr "GPS轨迹是诸如行程时间估计、交通预测和轨迹相似性测
 
 #: ../task/trajrec.rst:13
 msgid "Formal Definition"
-msgstr "任务正式定义"
+msgstr "正式定义"
 
 #: ../task/trajrec.rst:15
 msgid ""
