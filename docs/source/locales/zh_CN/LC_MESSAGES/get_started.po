@@ -175,7 +175,7 @@ msgstr "下载轨迹数据集"
 msgid ""
 "We provide the Porto dataset in `link <https://drive.google.com/file/d"
 "/1O0hozbJtYxmK4gAIGj9fM6cm-moXtzVz/view?usp=drive_link>`_."
-msgstr "我们在 `链接 <https://drive.google.com/file/d/1O0hozbJtYxmK4gAIGj9fM6cm-moXtzVz/view?usp=drive_link>`_ 中提供了波尔图数据集。"
+msgstr "为了房间研究人员使用该框架进行训练和评估，在 `链接 <https://drive.google.com/file/d/1O0hozbJtYxmK4gAIGj9fM6cm-moXtzVz/view?usp=drive_link>`_ 中提供了处理好的波尔图数据集。"
 
 #: ../get_started/quick_start.rst:26
 msgid "Please download the dataset and put it under ``data/trajectory/Porto/``."
@@ -187,11 +187,11 @@ msgstr "第二步"
 
 #: ../get_started/quick_start.rst:30
 msgid "Run the Porto dataset with MTrajRec model"
-msgstr "使用MTrajRec模型运行波尔图数据集。"
+msgstr "如果想要使用MTrajRec模型在波尔图数据集上进行训练，请谁用下面的命令。"
 
 #: ../get_started/quick_start.rst:41
 msgid "The results will be saved in the ``outputs/MTrajRec_Porto`` directory."
-msgstr "结果将保存在 ``outputs/MTrajRec_Porto`` 目录中。"
+msgstr "模型训练的结果将保存在 ``outputs/MTrajRec_Porto`` 目录中。"
 
 #: ../get_started/quick_start.rst:43
 msgid "Step 3"
@@ -212,7 +212,7 @@ msgstr "如果您想修改YAML配置文件中的默认参数，比如将 ``onlin
 msgid ""
 "The results will be saved in the "
 "``outputs/MTrajRec_Porto_online_features_flag`` directory."
-msgstr "结果将保存在 ``outputs/MTrajRec_Porto_online_features_flag`` 目录中。"
+msgstr "模型训练的结果将保存在 ``outputs/MTrajRec_Porto_online_features_flag`` 目录中。"
 
 #: ../get_started/structure.rst:3
 msgid "Project Structure"
