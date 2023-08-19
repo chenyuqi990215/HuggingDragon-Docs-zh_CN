@@ -53,7 +53,7 @@ msgstr "原始轨迹数据集"
 
 #: ../get_started/download.rst:19
 msgid "We provide three trajectory datasets."
-msgstr "我们提供了三个轨迹数据集。"
+msgstr "该框架中提供了三个公开的轨迹数据集。"
 
 #: ../get_started/download.rst:23
 msgid "Porto"
@@ -65,13 +65,13 @@ msgid ""
 "taxi dataset is an open dataset available on Kaggle. We provide map-"
 "matched trajectories in `Porto.txt <https://drive.google.com/file/d"
 "/1O0hozbJtYxmK4gAIGj9fM6cm-moXtzVz/view?usp=drive_link>`_."
-msgstr "`波尔图 <https://www.kaggle.com/datasets/crailtap/taxi-trajectory>`_ 出租车数据集是Kaggle上的一个开放数据集。我们提供了在 `Porto.txt <https://drive.google.com/file/d/1O0hozbJtYxmK4gAIGj9fM6cm-moXtzVz/view?usp=drive_link>`_ 中的地图匹配轨迹。"
+msgstr "`波尔图 <https://www.kaggle.com/datasets/crailtap/taxi-trajectory>`_ 出租车数据集是Kaggle上的一个开放数据集。在 `Porto.txt <https://drive.google.com/file/d/1O0hozbJtYxmK4gAIGj9fM6cm-moXtzVz/view?usp=drive_link>`_ 中提供了地图匹配之后的轨迹。"
 
 #: ../get_started/download.rst:27
 msgid ""
 "We also provide code for processing raw trajectory data downloaded from "
 "kaggle website."
-msgstr "我们还提供了用于处理从 Kaggle 网站下载的原始轨迹数据的代码。"
+msgstr "该框架中还提供了用于处理从 Kaggle 网站下载的原始轨迹数据的代码。"
 
 #: ../get_started/download.rst:33
 msgid "T-drive"
@@ -84,13 +84,13 @@ msgid ""
 "provided by Microsoft. It contains trajectory data from taxi rides. We "
 "provide map-matched trajectory in `T-drive.txt "
 "<https://drive.google.com/file/d/146C0NR8w86eG9Q4WJB2RoHdIIlGVSjnj/view?usp=drive_link>`_."
-msgstr "`T-drive <https://www.microsoft.com/en-us/research/publication/t-drive-trajectory-data-sample/>`_ 出租车数据集是由微软提供的一个开放数据集，包含出租车行程的轨迹数据。我们在 `T-drive.txt <https://drive.google.com/file/d/146C0NR8w86eG9Q4WJB2RoHdIIlGVSjnj/view?usp=drive_link>`_ 中提供了地图匹配的轨迹。"
+msgstr "`T-drive <https://www.microsoft.com/en-us/research/publication/t-drive-trajectory-data-sample/>`_ 出租车数据集是由微软提供的一个开放数据集，包含出租车行程的轨迹数据。在 `T-drive.txt <https://drive.google.com/file/d/146C0NR8w86eG9Q4WJB2RoHdIIlGVSjnj/view?usp=drive_link>`_ 中提供了地图匹配之后的轨迹。"
 
 #: ../get_started/download.rst:37
 msgid ""
 "We also provide code for processing raw trajectory data downloaded from "
 "Microsoft website:"
-msgstr "我们还提供了用于处理从微软网站下载的原始轨迹数据的代码。"
+msgstr "该框架还提供了用于处理从微软网站下载的原始轨迹数据的代码。"
 
 #: ../get_started/download.rst:43
 msgid "Beijing"
@@ -102,19 +102,19 @@ msgid ""
 "introduction.md>`_ taxi dataset is provided in Libcity. We provide map-"
 "matched trajectories in `Beijing.txt <https://drive.google.com/file/d"
 "/17eQHZbxTK-hjbR_Na7n_7EMI_i2f9AuV/view?usp=drive_link>`_."
-msgstr "`北京出租车数据集 <https://github.com/aptx1231/START/blob/master/bj-data-introduction.md>`_ 是在Libcity中提供的。我们在 `Beijing.txt <https://drive.google.com/file/d/17eQHZbxTK-hjbR_Na7n_7EMI_i2f9AuV/view?usp=drive_link>`_ 中提供了地图匹配的轨迹。"
+msgstr "`北京出租车数据集 <https://github.com/aptx1231/START/blob/master/bj-data-introduction.md>`_ 是在Libcity中提供的。在 `Beijing.txt <https://drive.google.com/file/d/17eQHZbxTK-hjbR_Na7n_7EMI_i2f9AuV/view?usp=drive_link>`_ 中提供了地图匹配之后的轨迹。"
 
 #: ../get_started/download.rst:49
 msgid ""
 "For more information about processing Beijing dataset, please see "
 ":doc:`new road network <../basic_tutorials/road_network>`."
-msgstr "要了解有关处理北京数据集的更多信息，请参阅 :doc:`创建新的路网 <../basic_tutorials/road_network>`。"
+msgstr "如果想要了解有关处理北京数据集的更多信息，请参阅 :doc:`创建新的路网 <../basic_tutorials/road_network>`。"
 
 #: ../get_started/download.rst:53
 msgid ""
 "To use the map matching result, please make sure to use the road network "
 "we provided."
-msgstr "为了使用地图匹配结果，请确保使用我们提供的道路网络。"
+msgstr "为了使用地图匹配结果，请确保使用本框架中提供的道路网络数据。"
 
 #: ../get_started/download.rst:58
 msgid ""
